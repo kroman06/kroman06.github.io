@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaLang | Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS for scroll animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#posts">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>NovaLang</h1>
+        <p>The next-generation programming language for blazing-fast, beautiful code.</p>
+        <a href="#features" class="btn">Learn More</a>
+    </header>
+
+    <section id="features" data-aos="fade-up">
+        <h2>Core Features</h2>
+        <div class="features">
+            <div class="feature" data-aos="zoom-in" data-aos-delay="100">
+                <h3>High Performance</h3>
+                <p>Compiled to native binaries with ultra-optimized pipelines.</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Elegant Syntax</h3>
+                <p>Readable, concise, and expressive for rapid development.</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-aos-delay="300">
+                <h3>Cross-Platform</h3>
+                <p>Seamlessly target web, desktop, and mobile environments.</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-aos-delay="400">
+                <h3>Developer Tooling</h3>
+                <p>Integrated REPL, package manager, and smart IDE plugins.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="posts" data-aos="fade-up">
+        <h2>Latest Blog Posts</h2>
+        <div class="posts">
+            <div class="post" data-aos="fade-left" data-aos-delay="100">
+                <img src="./images/nova_released.png" alt="Post 1">
+                <div class="overlay">
+                    <h4>Introducing NovaLang 1.0</h4>
+                    <p>Discover the stable release with performance benchmarks.</p>
+                </div>
+            </div>
+            <div class="post" data-aos="fade-left" data-aos-delay="200">
+                <img src="./images/getting_started.png" alt="Post 2">
+                <div class="overlay">
+                    <h4>Getting Started Guide</h4>
+                    <p>Set up your environment and write your first program.</p>
+                </div>
+            </div>
+            <div class="post" data-aos="fade-left" data-aos-delay="300">
+                <img src="./images/migrating.png" alt="Post 3">
+                <div class="overlay">
+                    <h4>Migration from JavaScript</h4>
+                    <p>Look how easy to migrate your javascript program to NovaLang!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Get in Touch</h2>
+        <div class="contact">
+            <a href="mailto:hello@novalang.dev">Email Us</a>
+            <a href="https://github.com/novalang" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Kozachok Roman / PD-23</p>
+        &copy; 2025 NovaLang. All rights reserved.
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Initialize particles.js
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles loaded');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script> AOS.init({ duration: 800, once: true }); </script>
+</body>
+
+</html>
